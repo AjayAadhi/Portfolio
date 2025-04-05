@@ -152,8 +152,10 @@ body {
     position: relative;
 }
 
-.profile-image-container {
-    transform: translateX(-60px); /* Shift to the left */
+@media (min-width: 992px) {
+    .profile-image-container {
+        transform: translateX(-60px); /* Move the image to the right */
+    }
 }
 
 .profile-image {
