@@ -30,29 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     let isAlternatePalette = false;
     
-    // Theme toggle click handler - custom implementation that doesn't change the theme to light
-    themeToggle.addEventListener('click', () => {
-        if (!isAlternatePalette) {
-            // Switch to "light mode" palette while keeping dark backgrounds
-            darkIcon.classList.add('d-none');
-            lightIcon.classList.remove('d-none');
-            isAlternatePalette = true;
-            
-            // Update accent colors but keep dark backgrounds
-            document.documentElement.style.setProperty('--bs-primary', lightModeColors.primary);
-            document.documentElement.style.setProperty('--bs-secondary', lightModeColors.secondary);
-        } else {
-            // Switch back to default dark mode
-            lightIcon.classList.add('d-none');
-            darkIcon.classList.remove('d-none');
-            isAlternatePalette = false;
-            
-            // Reset to original colors
-            document.documentElement.style.setProperty('--bs-primary', darkModeColors.primary);
-            document.documentElement.style.setProperty('--bs-secondary', darkModeColors.secondary);
-        }
-    });
-
     // Navbar scroll effect
     let navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', function() {
@@ -88,11 +65,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Project filtering functionality
     const filterButtons = document.querySelectorAll('.project-filters .btn');
+    // console.log(filterButtons);
     const projectItems = document.querySelectorAll('.project-item');
     
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
             // Remove active class from all buttons
+            // console.log(`Filter clicked: ${button.getAttribute('data-filter')}`);
             filterButtons.forEach(btn => btn.classList.remove('active'));
             // Add active class to clicked button
             button.classList.add('active');
@@ -100,6 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const filter = button.getAttribute('data-filter');
             
             projectItems.forEach(item => {
+                // console.log(`Checking item: ${item.getAttribute('data-category')}`);
                 if (filter === 'all' || item.getAttribute('data-category') === filter) {
                     item.style.display = 'block';
                     setTimeout(() => {
