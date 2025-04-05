@@ -1,0 +1,72 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<!-- Hero Section -->
+<section id="hero" class="hero d-flex align-items-center min-vh-100">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 text-center d-flex align-items-center justify-content-center">
+                <div class="profile-image-container mx-auto">
+                    <img src="{{ url_for('static', filename='img/test2.png') }}" alt="Profile Photo"
+                        class="img-fluid rounded-circle profile-image">
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-10 text-center text-lg-start">
+                <!-- <h1 class="display-3 fw-bold mb-4">Hi, I'm <span class="text-primary">Ajay</span></h1> -->
+                <h1 class="display-3 fw-bold mb-4">
+                    <i class="fas fa-hand-peace me-2 text-primary"></i> I'm <span class="text-primary">Ajay</span>
+                </h1>
+
+                <!-- <h2 class="mb-4">Data scientists</h2> -->
+                <h2 id="data-scientist-title" class="mb-4 custom-heading">Data Scientist</h2>
+
+                <p class="lead mb-4">Data-driven innovator with deep generative AI expertise, turning complex problems
+                    into intelligent products.</p>
+
+                <div class="hero-buttons mb-4">
+                    <a href="#contact" class="btn btn-primary px-4 py-2 me-3">Contact Me</a>
+                    <a href="#projects" class="btn btn-outline-light px-4 py-2">View Work</a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/AjayAadhi" class="btn btn-outline-primary rounded-circle me-2"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"
+                        class="btn btn-outline-primary rounded-circle me-2"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://leetcode.com/u/Ajay_S/" class="btn btn-outline-primary rounded-circle me-2"><i
+                            class="fas fa-code"></i></a>
+                    <!-- <a href="#" class="btn btn-outline-primary rounded-circle"><i class="fab fa-instagram"></i></a> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="hero-scroll-down mt-5">
+                    <a href="#skills" class="text-light text-decoration-none">
+                        <div class="d-flex flex-column align-items-center">
+                            <!-- <span class="mb-2">Scroll Down</span> -->
+                            <i class="fas fa-chevron-down fa-bounce"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section removed as requested -->
+{% include 'about.html' %}
+<!-- Skills Section -->
+{% include 'skills.html' %}
+
+<!-- Projects Section -->
+{% include 'projects.html' %}
+
+<!-- Experience Section -->
+{% include 'experience.html' %}
+
+<!-- Contact Section -->
+{% include 'contact.html' %}
+
+{% endblock %}

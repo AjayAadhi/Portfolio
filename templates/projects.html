@@ -1,0 +1,246 @@
+<section id="projects" class="section-padding bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="section-title">My Projects</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Explore some of my recent work</p>
+            </div>
+        </div>
+
+        <!-- Project Filters -->
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <div class="project-filters">
+                    <button class="btn btn-outline-primary me-2 mb-2 active" data-filter="all">All</button>
+                    <button class="btn btn-outline-primary me-2 mb-2" data-filter="web">Web Development</button>
+                    <button class="btn btn-outline-primary me-2 mb-2" data-filter="mobile">Mobile Apps</button>
+                    <button class="btn btn-outline-primary mb-2" data-filter="design">UI/UX Design</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="row g-4 project-grid">
+            <!-- Project 1 -->
+            <div class="col-lg-4 col-md-6 project-item" data-category="web">
+                <div class="card h-100 project-card">
+                    <div class="project-image bg-primary text-white d-flex align-items-center justify-content-center"
+                        style="height: 200px;">
+                        <i class="fas fa-robot fa-3x"></i>
+                    </div>
+                    <div class="card-body">
+                        <!-- <h4 class="card-title">AI-Mentor Bot</h4> -->
+                        <h4 class="card-title fw-bold text-primary" style="letter-spacing: 1px;">AI-Mentor Bot</h4>
+
+                        <p class="card-text">A smart LLM-powered chatbot that analyzes student performance data and
+                            offers personalized insights.
+                            It guides learners by identifying weak areas and providing recommendations for
+                            improvement—like having a personal AI tutor that grows with you.</p>
+                        <div class="tech-stack">
+                            <span class="badge bg-primary me-1">Python</span>
+                            <span class="badge bg-primary me-1">Numpy & Pandas</span>
+                            <span class="badge bg-primary me-1">Langchain</span>
+                            <span class="badge bg-primary">Flask</span>
+                            <span class="badge bg-primary">Prompt Engineering</span>
+                            <span class="badge bg-primary">PostgresDB</span>
+                            <span class="badge bg-primary">PostgreSQL</span>
+                            <span class="badge bg-primary">Gunicorn / Nginx</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0">
+                        <div class="d-flex justify-content-between">
+                            <a href="https://github.com/AjayAadhi/Portfolio/blob/main/Project%20Documentation/AI-MentorBot.md"
+                                class="btn btn-sm btn-primary">View Details</a>
+                            <a href="https://github.com/AjayAadhi/GenAI/blob/main/Agent/ChatBot.ipynb"
+                                class="btn btn-sm btn-outline-secondary"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-lg-4 col-md-6 project-item" data-category="mobile">
+                <div class="card h-100 project-card">
+                    <div class="project-image bg-info text-white d-flex align-items-center justify-content-center"
+                        style="height: 200px;">
+                        <i class="fas fa-camera fa-3x"></i>
+                        <!-- <i class="fas fa-hand-paper fa-3x text-primary"></i> -->
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">Sign language recognition</h4>
+                        <p class="card-text"> A SL-Interpreter that uses the device’s camera to recognize ASL in real
+                            time.
+                            It helps non-signers understand sign language instantly, promoting smoother, more inclusive
+                            communication
+                            in settings like classrooms, hospitals, and public spaces. Trained on a custom dataset for
+                            high accuracy.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="badge bg-primary me-1">Python</span>
+                            <span class="badge bg-primary me-1">Streamlit</span>
+                            <span class="badge bg-primary">OpenCV</span>
+                            <span class="badge bg-primary">TensorFlow</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0">
+                        <div class="d-flex justify-content-between">
+                            <a href="https://github.com/AjayAadhi/Sign-language-recognition/blob/main/README.md"
+                                class="btn btn-sm btn-primary">View Details</a>
+                            <a href="https://github.com/AjayAadhi/Sign-language-recognition"
+                                class="btn btn-sm btn-outline-secondary"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-lg-4 col-md-6 project-item" data-category="design">
+                <div class="card h-100 project-card">
+                    <div class="project-image bg-warning text-white d-flex align-items-center justify-content-center"
+                        style="height: 200px;">
+                        <i class="fas fa-search fa-3x"></i>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">Retrieval Augmented Generation</h4>
+                        <p class="card-text">A RAG system using a vector DB of 1M+ questions. It finds
+                            exact matches to provide solutions and suggests similar ones for practice. Achieved 70%
+                            success in delivering relevant answers,it also have a profanity check.The service has been
+                            beployed on EC2.</p>
+                        <div class="tech-stack">
+                            <span class="badge bg-primary me-1">Python</span>
+                            <span class="badge bg-primary me-1">Embedding Model</span>
+                            <span class="badge bg-primary">Flask</span>
+                            <span class="badge bg-primary">Pinecone</span>
+                            <span class="badge bg-primary">PostgreSQL</span>
+                            <span class="badge bg-primary">LLM</span>
+                            <span class="badge bg-primary">Gunicorn / Nginx</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0">
+                        <div class="d-flex justify-content-between">
+                            <a href="https://github.com/AjayAadhi/Portfolio/blob/main/Project%20Documentation/RAG.Md"
+                                class="btn btn-sm btn-primary">View Details</a>
+                            <a href="https://github.com/AjayAadhi/GenAI/tree/main/RAG"
+                                class="btn btn-sm btn-outline-secondary"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="col-lg-4 col-md-6 project-item" data-category="web">
+                <div class="card h-100 project-card">
+                    <div class="project-image bg-success text-white d-flex align-items-center justify-content-center"
+                        style="height: 200px;">
+                        <i class="fas fa-lightbulb fa-3x"></i>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">Doubt Solver</h4>
+                        <p class="card-text">An LLM-powered agent that helps students solve problems by first offering
+                            hints to encourage self-solving.
+                            If needed, it then guides them through step-by-step solutions—promoting deeper understanding
+                            and independent thinking.It also uses RAG with few-shot examples to enhance problem-solving.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="badge bg-primary me-1">Python</span>
+                            <span class="badge bg-primary me-1">Flask</span>
+                            <span class="badge bg-primary">PostgreSQL</span>
+                            <span class="badge bg-primary">LLM</span>
+                            <span class="badge bg-primary">Langchain</span>
+                            <span class="badge bg-primary">RAG</span>
+                            <span class="badge bg-primary">Streamlit</span>
+                            <span class="badge bg-primary">Prompt Engineering</span>
+                            <span class="badge bg-primary">Gunicorn / Nginx</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0">
+                        <div class="d-flex justify-content-between">
+                            <a href="https://github.com/AjayAadhi/Portfolio/blob/main/Project%20Documentation/DoubtSolver.md"
+                                class="btn btn-sm btn-primary">View Details</a>
+                            <a href="https://github.com/AjayAadhi/Doubt-Solver"
+                                class="btn btn-sm btn-outline-secondary"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="col-lg-4 col-md-6 project-item" data-category="mobile">
+                <div class="card h-100 project-card">
+                    <div class="project-image bg-danger text-white d-flex align-items-center justify-content-center"
+                        style="height: 200px;">
+                        <i class="fas fa-briefcase fa-3x"></i>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">Resume Parser</h4>
+                        <p class="card-text">An AI tool that extracts key resume details and analyzes candidate fitment
+                            by comparing profiles against one or more job descriptions (JDs).
+                            Adopted by my company for internal hiring, it’s now offered as a web service to HR
+                            teams
+                            for faster, smarter screening.</p>
+                        <div class="tech-stack">
+                            <span class="badge bg-primary me-1">Python</span>
+                            <span class="badge bg-primary me-1">Flask</span>
+                            <span class="badge bg-primary">Streamlit</span>
+                            <span class="badge bg-primary">LLMs</span>
+                            <span class="badge bg-primary">Prompt Engineering</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0">
+                        <div class="d-flex justify-content-between">
+                            <a href="https://github.com/AjayLogos/Resume-Parser/blob/main/README.md"
+                                class="btn btn-sm btn-primary">View Details</a>
+                            <a href="https://resume-parser-unxhdbnigteuir32ybortm.streamlit.app/"
+                                class="btn btn-sm btn-primary">Demo</a>
+                            <a href="https://github.com/AjayLogos/Resume-Parser"
+                                class="btn btn-sm btn-outline-secondary"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="col-lg-4 col-md-6 project-item" data-category="design">
+                <div class="card h-100 project-card">
+                    <div class="project-image bg-primary text-white d-flex align-items-center justify-content-center"
+                        style="height: 200px;">
+                        <i class="fas fa-graduation-cap fa-3x"></i>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title text-primary">Multi-Agent ChatBot</h4>
+                        <p class="card-text">An intelligent multi-agent chatbot that analyzes student performance across
+                            tests using specialized agents. It tracks time spent, identifies mistakes, and delivers
+                            actionable insights. Goal and recommendation agents suggest focus areas, while subject and
+                            practice agents offer tailored strategies and personalized questions—empowering students to
+                            improve efficiently.</p>
+                        <div class="tech-stack">
+                            <span class="badge bg-primary me-1">Python</span>
+                            <span class="badge bg-primary me-1">Langchain</span>
+                            <span class="badge bg-primary">Langraph</span>
+                            <span class="badge bg-primary">LLMs</span>
+                            <span class="badge bg-primary">Prompt Engineering</span>
+                            <span class="badge bg-primary">PostgresDB</span>
+                            <span class="badge bg-primary">Flask</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0">
+                        <div class="d-flex justify-content-between">
+                            <a href="https://github.com/AjayLogos/MultiAgent/blob/main/README.md"
+                                class="btn btn-sm btn-primary">View Details</a>
+                            <a href="https://github.com/AjayLogos/MultiAgent/blob/main/TestBot_Multiagent.ipynb"
+                                class="btn btn-sm btn-outline-secondary"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- More Projects Button -->
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <a href="#" class="btn btn-outline-primary px-4 py-2">View All Projects</a>
+            </div>
+        </div>
+    </div>
+</section>
