@@ -2,6 +2,10 @@ import os
 import logging
 from flask import Flask, render_template, request, flash, redirect, url_for
 from datetime import datetime
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Configure logging
 logging.basicConfig(level=logging.DEBUG)
@@ -12,15 +16,14 @@ app.secret_key = os.environ.get("SESSION_SECRET", "dev-secret-key")
 from flask_mail import Mail, Message
 
 # Configurations
-app.config['MAIL_SERVER'] = 'smtp.gmail.com'  # Or another provider
-app.config['MAIL_PORT'] = 587
-app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = 'ajayaadhi647@gmail.com'
-app.config['MAIL_PASSWORD'] = 'relp vluf qbsb ouih'
-app.config['MAIL_DEFAULT_SENDER'] = 'ajayaadhi647@gmail.com'
+app.config['MAIL_SERVER'] = os.getenv('MAIL_SERVER')
+app.config['MAIL_PORT'] = int(os.getenv('MAIL_PORT', 587))
+app.config['MAIL_USE_TLS'] = os.getenv('MAIL_USE_TLS', 'True') == 'True'
+app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')
+app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD')
+app.config['MAIL_DEFAULT_SENDER'] = os.getenv('MAIL_DEFAULT_SENDER')
 
 mail = Mail(app)
-
 
 # Add template context processor for date functions
 @app.context_processor
